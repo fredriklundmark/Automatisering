@@ -13,6 +13,6 @@ Feature: Email Registration
     Examples: 
       | EmailAddress  | Username        | Password | Result      |
       | successEmail  | successUsername | password | success     |
-      | email2        | LongUsername    | password | failLong    |
-      | email3        | TakenUsername   | password | failTaken   |
-      | Missing email | username        | password | failMissing |
+      | email2        | longUsername    | password | failLong    |
+      | email3        | takenUsername   | password | failTaken   |
+      | missingEmail  | username        | password | failMissing |
