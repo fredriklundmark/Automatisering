@@ -31,7 +31,7 @@ public class StepDefinitions {
 	   char[] text = new char[length];
 		
 		for(int i = 0; i <length; i++) {
-			text[i] = alphabet.charAt(generate.nextInt(alphabet.length()));			// Saves the randomized characters from the alphabet-string according to the preset length of 20.
+			text[i] = alphabet.charAt(generate.nextInt(alphabet.length()));	 // Saves the randomized characters from the alphabet-string according to the preset length of 20.
 		}
 		for(int i = 0; i <text.length; i++) {
 			randomName += text[i];
@@ -51,7 +51,7 @@ public class StepDefinitions {
 		if(emailAddress.matches("email3")) {
 		emailInput.sendKeys(randomName + "@abc.com");
 		}
-		if(emailAddress.matches("missingEmail")) {									// Not necessary, but added for symmetry and overview with the rest of the code. (4 test cases)
+		if(emailAddress.matches("missingEmail")) {			// Not necessary, but added for symmetry and overview with the rest of the code. (4 test cases)
 		emailInput.sendKeys("");
 		}
 	}
@@ -77,7 +77,7 @@ public class StepDefinitions {
 	@When("user types a {string}")
 	public void user_types_a_password(String password) {
 		WebElement passwordInput = driver.findElement(By.id("new_password"));
-		passwordInput.sendKeys("Abcdef1!");													// A preset password that fulfills the sites requirements.
+		passwordInput.sendKeys("Abcdef1!");				// A preset password that fulfills the sites requirements.
 		 
 		String actualPass = driver.findElement(By.className("c-media")).getText();
 		String expectedPass = "Your password is secure and you're all set!";
