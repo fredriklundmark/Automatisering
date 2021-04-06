@@ -13,8 +13,8 @@ Successful creation. Long username(>100 characters). Taken username. Missing e-m
     Then the "<Result>" will be shown
 
     Examples: 
-      | EmailAddress  | Username        | Password | Result      |
-      | successEmail  | successUsername | password | success     |
-      | email2        | longUsername    | password | failLong    |
-      | email3        | takenUsername   | password | failTaken   |
-      | missingEmail  | username        | password | failMissing |
+    | EmailAddress  | Username        | Password | Result      |
+    | successEmail  | successUsername | password | success     |
+    | email2        | longUsername    | password | failLong    |
+    | email3        | takenUsername   | password | failTaken   |
+    | missingEmail  | username        | password | failMissing |
