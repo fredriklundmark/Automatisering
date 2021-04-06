@@ -10,7 +10,6 @@ Successful creation. Long username(>100 characters). Taken username. Missing e-m
     And user selects a "<Username>"
     And user types a "<Password>"
     And user click on sign up button
-
     Then the "<Result>" will be shown
 
     Examples: 
