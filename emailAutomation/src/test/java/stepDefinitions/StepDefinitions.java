@@ -96,12 +96,11 @@ public class StepDefinitions {
 		WebElement successRegistration = driver.findElement(By.cssSelector("h1[class='!margin-bottom--lv3 no-transform center-on-medium']"));
 		WebElement successInformation = driver.findElement(By.className("signup-wrap"));
 		
-		boolean pageAfterSignUp = successInformation.isDisplayed();
 		String successPageText = "Check your email";
+		boolean pageAfterSignUp = successInformation.isDisplayed();
 		
-		Assert.assertEquals(true, pageAfterSignUp);
 		Assert.assertEquals(successRegistration.getText(), successPageText);
-		
+		Assert.assertEquals(true, pageAfterSignUp);
 		}
 		if(result.matches("failLong")) {
 		WebElement longUsernameError = driver.findElement(By.cssSelector(".invalid-error"));
