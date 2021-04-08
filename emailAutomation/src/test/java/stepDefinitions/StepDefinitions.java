@@ -29,7 +29,7 @@ public class StepDefinitions {
 
 		for (int i = 0; i < length; i++) {
 			text[i] = alphabet.charAt(generate.nextInt(alphabet.length())); // Saves the randomized characters from the
-		} 																	// alphabet-string according to the preset length of 20.
+		} 								// alphabet-string according to the preset length of 20.
 		for (int i = 0; i < text.length; i++) {
 			randomName += text[i];
 		}
@@ -107,8 +107,7 @@ public class StepDefinitions {
 	public void the_result_will_be_shown(String result) {
 
 		if (result.equals("success")) {
-			WebElement successRegistration = driver
-					.findElement(By.cssSelector("h1[class='!margin-bottom--lv3 no-transform center-on-medium']"));
+			WebElement successRegistration = driver.findElement(By.cssSelector("h1[class='!margin-bottom--lv3 no-transform center-on-medium']"));
 			WebElement successInformation = driver.findElement(By.className("signup-wrap"));
 
 			String successPageText = "Check your email";
